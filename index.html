@@ -440,8 +440,10 @@
       <div class="project-card" data-tags="ml">
         <div class="project-top"><h3>Forecast the Feast — Kaggle ML Competition (IPB)</h3><span class="project-year">2026</span></div>
         <ul>
-          <li>Solo entry forecasting 10-week food demand at a fulfillment center.</li>
-          <li>Ensemble of XGBoost, LightGBM, and CatBoost with lag-based time series feature engineering (weeks 1–52).</li>
+          <li>Built a demand forecasting model using Gradient Boosting (ensemble tree), supported by feature engineering (price features, promo interaction, mean encoding, lag & rolling features).</li>
+          <li>Found that demand was influenced by price, promotions, food category, and temporal patterns, with a skewed target distribution requiring a logarithmic transformation.</li>
+          <li>Evaluated the model through time-based validation (Week 126–135): XGBoost recorded a MAPE of 40.38%, while the ensemble achieved 40.42% with more stable predictions.</li>
+          <li>Selected the ensemble as the final model for its greater robustness to data fluctuations and better generalization for stock and workforce planning.</li>
         </ul>
         <div class="project-tools">Python · XGBoost · LightGBM · CatBoost</div>
         <div class="project-links"><a href="https://canva.link/6w1kvuicjn9nhaj" target="_blank">View Report →</a></div>
