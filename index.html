@@ -264,7 +264,7 @@
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>I am a Data Analyst currently pursuing a Master's degree in Statistics and Data Science at IPB University (GPA 3.83), shaped by a path of learning to read long-term patterns in geophysical data before turning fully toward data analytics.</p>
+        <p>I am a Data Analyst currently pursuing a Master's degree in Statistics and Data Science at IPB University (GPA 3.69), shaped by a path of learning to read long-term patterns in geophysical data before turning fully toward data analytics.</p>
         <p>I believe that data, including unstructured data such as text, holds valuable information that can support better business decision-making. This belief has guided my work across 17 analytics projects, spanning business dashboards, machine learning, and NLP, along with two academic publications on text classification.</p>
         <p>I am currently a member of a lecturer's research team focused on Text Analytics, and part of the Data Analysis team at IPB's School of Data Science, Mathematics, and Informatics (SSMI), working on a national-scale education quality mapping project commissioned by the university Rector.</p>
       </div>
@@ -272,7 +272,7 @@
         <div class="stat-grid">
           <div><div class="stat-num">17</div><div class="stat-label">PROJECTS SHIPPED</div></div>
           <div><div class="stat-num">2</div><div class="stat-label">PUBLICATIONS</div></div>
-          <div><div class="stat-num">3.83</div><div class="stat-label">GPA (M.Sc.)</div></div>
+          <div><div class="stat-num">3.69</div><div class="stat-label">GPA (M.Sc.)</div></div>
           <div><div class="stat-num">5</div><div class="stat-label">CERTIFICATIONS</div></div>
         </div>
       </div>
@@ -292,7 +292,7 @@
         <h3>&lt; Programming &amp; Database /&gt;</h3>
         <div class="chip-row">
           <span class="chip">SQL</span><span class="chip">Python</span><span class="chip">R</span>
-          <span class="chip">PostgreSQL</span><span class="chip">ERD Design</span><span class="chip">ETL Pipeline</span>
+          <span class="chip">ERD Design</span><span class="chip">ETL Pipeline</span>
         </div>
       </div>
       <div class="skill-card">
@@ -306,7 +306,7 @@
         <h3>&lt; Machine Learning &amp; Stats /&gt;</h3>
         <div class="chip-row">
           <span class="chip">Regression</span><span class="chip">Clustering</span><span class="chip">Time Series</span>
-          <span class="chip">Ensemble Learning (Boosting Methods)</span>
+          <span class="chip">Ensemble Learning</span>
         </div>
       </div>
       <div class="skill-card">
@@ -407,9 +407,10 @@
       <div class="project-card" data-tags="ml stats">
         <div class="project-top"><h3>Global Cost of Living Clustering Analysis</h3><span class="project-year">2026</span></div>
         <ul>
-          <li>Web scraped cost-of-living data for 139 countries from Numbeo (requests, BeautifulSoup).</li>
-          <li>Applied K-Means Clustering + PCA; optimal K=2 via Silhouette Score (0.555) and Davies-Bouldin Index.</li>
-          <li>Identified 2 clusters: 102 low-to-medium cost countries vs. 37 high-cost countries (Switzerland, Singapore, U.S.).</li>
+          <li>Performed web scraping of cost-of-living data for 139 countries from Numbeo using Python (requests, BeautifulSoup).</li>
+          <li>Applied K-Means Clustering combined with Principal Component Analysis (PCA) for dimensionality reduction.</li>
+          <li>Determined the optimal number of clusters (K=2) based on Silhouette Score (0.555) and Davies-Bouldin Index.</li>
+          <li>Identified and interpreted two main clusters: 102 low-to-medium cost countries vs. 37 high-cost countries (including Switzerland, Singapore, and the United States).</li>
         </ul>
         <div class="project-tools">Python · Scikit-learn · PCA · K-Means</div>
         <div class="project-links"><a href="https://drive.google.com/file/d/1Gr7-SnxKwsC7frFO5V49X-pVT3MUE_y6/view?usp=sharing" target="_blank">View Report →</a></div>
@@ -418,9 +419,11 @@
       <div class="project-card" data-tags="sql db">
         <div class="project-top"><h3>Game Platform Dashboard — Database Manager</h3><span class="project-year">2026</span></div>
         <ul>
-          <li>Designed an 11-table relational database (6 master, 4 bridge, 1 fact) for cross-platform gaming data.</li>
-          <li>Built an ERD using Chen notation, fully documenting primary-foreign key relationships.</li>
-          <li>Wrote complex SQL queries as the backend for an R Shiny dashboard; built an ETL pipeline.</li>
+          <li>Served as Database Manager in a coursework project, responsible for the overall database architecture.</li>
+          <li>Designed a relational database structure with 11 tables (6 master, 4 bridge, 1 fact) for cross-platform gaming data.</li>
+          <li>Developed an Entity Relationship Diagram (ERD) using Chen notation and fully documented the primary-foreign key relationship schema.</li>
+          <li>Wrote and validated complex SQL queries (multi-table JOINs, GROUP BY, COUNT/SUM/AVG aggregations) serving as the backend for an R Shiny application.</li>
+          <li>Built an ETL (extract-transform-load) pipeline to integrate raw data into a production-ready database.</li>
         </ul>
         <div class="project-tools">SQL · DBngin · TablePlus · R Shiny</div>
         <div class="project-links"><a href="https://github.com/inriap8/STA2562-Game-Dataset" target="_blank">GitHub →</a></div>
@@ -429,16 +432,17 @@
       <div class="project-card" data-tags="ml">
         <div class="project-top"><h3>Airbnb Price Prediction Using Machine Learning</h3><span class="project-year">2026</span></div>
         <ul>
-          <li>Modeling role on a 59,288-row, 29-feature dataset with log transform, Target Encoding, and city×room-type interaction features.</li>
-          <li>Ensemble of LightGBM (45%) + CatBoost (55%), optimized with Optuna.</li>
-          <li>Achieved MAPE of 26.28%; location and capacity were the most influential features.</li>
+          <li>Worked with a training dataset of 59,288 rows and 29 features (categorical and numerical).</li>
+          <li>Performed preprocessing including log transformation of price, Target Encoding for categorical features, and interaction feature creation (city × room type).</li>
+          <li>Built an ensemble model combining LightGBM (45%) and CatBoost (55%), optimized using the Optuna algorithm.</li>
+          <li>Achieved a MAPE of 26.28%, with location and property capacity as the most influential features.</li>
         </ul>
         <div class="project-tools">Python · LightGBM · CatBoost · Optuna</div>
         <div class="project-links"><a href="https://drive.google.com/file/d/1dHf4zhkIcFlahMs5ngKyewAZ5LUDkAks/view?usp=sharing" target="_blank">View Report →</a></div>
       </div>
 
       <div class="project-card" data-tags="ml">
-        <div class="project-top"><h3>Forecast the Feast — Kaggle ML Competition (IPB)</h3><span class="project-year">2026</span></div>
+        <div class="project-top"><h3>Forecast the Feast — Kaggle ML Competition</h3><span class="project-year">2026</span></div>
         <ul>
           <li>Built a demand forecasting model using Gradient Boosting (ensemble tree), supported by feature engineering (price features, promo interaction, mean encoding, lag & rolling features).</li>
           <li>Found that demand was influenced by price, promotions, food category, and temporal patterns, with a skewed target distribution requiring a logarithmic transformation.</li>
@@ -452,9 +456,10 @@
       <div class="project-card" data-tags="ml stats">
         <div class="project-top"><h3>Rice Price Forecasting — ARIMA, SARIMA &amp; LSTM</h3><span class="project-year">2025</span></div>
         <ul>
-          <li>Compared 3 forecasting methods on BPS medium-grade rice price data (Jan 2013 – Oct 2025).</li>
-          <li>LSTM performed best: MAPE 5.89%, RMSE 968, outperforming ARIMA and SARIMA.</li>
-          <li>Produced 12-month price projections for food policy recommendations.</li>
+          <li>Analyzed medium-grade rice price data from Indonesia's Central Statistics Agency (BPS) for the period January 2013 – October 2025.</li>
+          <li>Compared three time series forecasting methods: ARIMA, SARIMA, and LSTM (Long Short-Term Memory).</li>
+          <li>Achieved the best performance with the LSTM model: MAPE 5.89%, RMSE 968, MAE 779, outperforming ARIMA and SARIMA.</li>
+          <li>Produced 12-month price projections as a basis for food policy recommendations.</li>
         </ul>
         <div class="project-tools">R · Keras · TensorFlow · forecast</div>
         <div class="project-links"><a href="https://github.com/HanifNaf/Project-Pemro" target="_blank">GitHub →</a></div>
@@ -463,8 +468,9 @@
       <div class="project-card" data-tags="stats">
         <div class="project-top"><h3>Glioma Subtype Classification — Penalized Regression</h3><span class="project-year">2025</span></div>
         <ul>
-          <li>Compared Ridge, LASSO, and Elastic Net on high-dimensional genomic data (170 patients, 326 variables).</li>
-          <li>Elastic Net achieved the best AUC of 0.858 and selected 5 key biomarker variables.</li>
+          <li>Compared three penalized regression methods: Ridge, LASSO, and Elastic Net on high-dimensional genomic data (170 patients, 326 variables).</li>
+          <li>Achieved the best result with Elastic Net: AUC of 0.858.</li>
+          <li>Successfully selected 5 key biomarker variables from 326 predictors, supporting simpler clinical interpretation.</li>
         </ul>
         <div class="project-tools">R · Ridge · LASSO · Elastic Net</div>
         <div class="project-links"><a href="https://drive.google.com/file/d/1yK3shLOctV54so1Lh80Zxqco8o8-cWMX/view?usp=sharing" target="_blank">View Report →</a></div>
@@ -473,9 +479,10 @@
       <div class="project-card" data-tags="ml">
         <div class="project-top"><h3>E-Wallet Fraud Detection — XGBoost &amp; Random Forest</h3><span class="project-year">2025</span></div>
         <ul>
-          <li>Detected fraud in 50,000 e-wallet transactions with severe class imbalance (90.1% vs 9.9%).</li>
-          <li>Used Isolation Forest anomaly scores + Balanced Random Forest with under-sampling.</li>
-          <li>Ensemble of XGBoost (0.7) + Random Forest (0.3): 79% sensitivity, 0.7279 Balanced Accuracy.</li>
+          <li>Detected fraud in 50,000 e-wallet transactions with significant class imbalance (90.1% non-fraud vs. 9.9% fraud).</li>
+          <li>Applied anomaly scores from Isolation Forest as additional features, along with average transaction ratio features and log transformation.</li>
+          <li>Used Balanced Random Forest with under-sampling to address class imbalance.</li>
+          <li>Built an ensemble model combining XGBoost (weight 0.7) and Random Forest (weight 0.3), achieving 79% sensitivity (0.7910) and 0.7279 Balanced Accuracy.</li>
         </ul>
         <div class="project-tools">Python · XGBoost · Isolation Forest</div>
         <div class="project-links"><a href="https://canva.link/e-wallet-fraud-detection" target="_blank">View Report →</a></div>
@@ -484,8 +491,10 @@
       <div class="project-card" data-tags="stats">
         <div class="project-top"><h3>West Java Household Expenditure Infographic</h3><span class="project-year">2025</span></div>
         <ul>
-          <li>Analyzed how GRDP, minimum wage, and years of schooling affect expenditure across 27 West Java regencies/cities.</li>
-          <li>Years of schooling was the most significant factor: +1 year → +6.9% expenditure (R² = 70.52%).</li>
+          <li>Analyzing the influence of economic factors on public expenditure.</li>
+          <li>Analyzed the effects of GRDP, minimum wage, and years of schooling on household expenditure across 27 regencies/cities in West Java using log-log regression.</li>
+          <li>Found that years of schooling was the most significant factor: each additional year of schooling increased expenditure by 6.9% (R² = 70.52%).</li>
+          <li>Presented research findings as an infographic accessible to non-technical audiences.</li>
         </ul>
         <div class="project-tools">R · ggplot2 · Log-Log Regression</div>
         <div class="project-links"><a href="https://drive.google.com/file/d/1CMhBeHDqe4IIDXuogPbquVe4hLUnvcr9/view?usp=sharing" target="_blank">View Report →</a></div>
@@ -494,9 +503,9 @@
       <div class="project-card" data-tags="sql bi">
         <div class="project-top"><h3>Banking Intelligence Analyst — Bank Muamalat</h3><span class="project-year">2025</span></div>
         <ul>
-          <li>Rakamin Academy × Bank Muamalat project-based internship, as BI Analyst for a case-study company.</li>
-          <li>Modeled 4 sales datasets in Google BigQuery; built a master transaction table with SQL.</li>
-          <li>Built a Digital User Churn Dashboard in Looker Studio; delivered sales retention recommendations.</li>
+          <li>Modeled four sales datasets (Customer, Products, Orders, ProductCategory) in Google BigQuery and built a master transaction table using complex SQL joins and aggregations.</li>
+          <li>Designed and built a Digital User Churn Dashboard in Looker Studio to track sales and retention metrics; found Robots as the top revenue category ($743,505) and Washington as the top city (55,381.94 in sales).</li>
+          <li>Delivered data-driven recommendations to sustain and grow sales performance, including year-end discount strategies and product catalog expansion for high-demand categories.</li>
         </ul>
         <div class="project-tools">Google BigQuery · Looker Studio · SQL</div>
         <div class="project-links">
@@ -508,9 +517,10 @@
       <div class="project-card" data-tags="ml">
         <div class="project-top"><h3>Telecom Customer Churn Prediction</h3><span class="project-year">2024</span></div>
         <ul>
-          <li>Compared 6 models (Random Forest, Decision Tree, XGBoost, Logistic Regression, Linear SVC, KNN) by recall.</li>
-          <li>Tuned XGBoost via GridSearchCV; achieved 96% accuracy on churn prediction.</li>
-          <li>Group project with Nibras Alfaruqiyah, Binar Academy Digital Talent Scholarship.</li>
+          <li>Compared 6 classification models (Random Forest, Decision Tree, XGBoost, Logistic Regression, Linear SVC, KNN) by recall score on 4,250 telecom customer records with 19 features.</li>
+          <li>Identified Number of Customer Service Calls, Total Day Charge, Total Day Minutes, and International Plan as the strongest predictors of churn via correlation heatmap analysis.</li>
+          <li>Tuned XGBoost via GridSearchCV (best params: learning_rate=0.1, max_depth=7, n_estimators=100), achieving 96% accuracy on churn prediction.</li>
+          <li>Predicted 566 at-risk customers from the test set to support retention and marketing strategy decisions.</li>
         </ul>
         <div class="project-tools">Python · XGBoost · Scikit-learn</div>
         <div class="project-links">
@@ -521,9 +531,9 @@
       <div class="project-card" data-tags="sql bi">
         <div class="project-top"><h3>Indonesia COVID-19 Data Analysis</h3><span class="project-year">2024</span></div>
         <ul>
-          <li>Analyzed 31,822 rows of national/provincial COVID-19 data (Mar 2020 – Sep 2022) via BigQuery SQL.</li>
-          <li>Built a Looker Studio dashboard: case trends, recovery/fatality rates, and provincial map view.</li>
-          <li>Group project with Nibras Alfaruqiyah, Binar Academy Digital Talent Scholarship.</li>
+          <li>Analyzed 31,822 rows of national and provincial COVID-19 data (Mar 2020 – Sep 2022) using BigQuery SQL with 6 analytical queries covering active cases, fatality rates, recovery rates, and temporal trends.</li>
+          <li>Found that DKI Jakarta had the highest total cases (1,412,474) and highest recovery rate (96.6%), while East Java recorded the highest fatality percentage (6.41%).</li>
+          <li>Built an interactive Looker Studio dashboard covering daily case trends, provincial maps, and recovery/fatality comparisons across 34 provinces.</li>
         </ul>
         <div class="project-tools">SQL (BigQuery) · Looker Studio</div>
         <div class="project-links">
@@ -534,8 +544,10 @@
       <div class="project-card" data-tags="bi">
         <div class="project-top"><h3>Superstore Sales Analysis</h3><span class="project-year">2023</span></div>
         <ul>
-          <li>Built superstore transaction dashboards for the U.S. market on two platforms: Tableau and Excel.</li>
-          <li>Uncovered sales patterns, profitability, and product performance.</li>
+          <li>Built interactive Superstore dashboards on two platforms (Tableau and Excel) covering total sales of $2,297,201, profit of $286,397, and profit margin of 12.47% across the U.S. market (2017–2021).</li>
+          <li>Analyzed sales and profit trends by state, showing California (top) and Texas (high sales but negative profit margin) as key performance contrasts across regions.</li>
+          <li>Found that Technology was the top-selling category while Furniture showed the lowest profit margin despite moderate sales volume; Consumer segment led all segments in both sales and profit.</li>
+          <li>Identified a positive correlation between sales and profit at city level, with outliers showing that high discount rates (avg. 0.4–0.8) consistently led to negative profit, visible in the Sales vs Profit scatter plot.</li>
         </ul>
         <div class="project-tools">Tableau · Excel</div>
         <div class="project-links"><a href="https://public.tableau.com/views/SuperstoreDataset_16932299546560/LandingPage?%3Alanguage=en-US&%3Adisplay_count=n&%3Aorigin=viz_share_link" target="_blank">View on Tableau Public →</a></div>
@@ -544,18 +556,22 @@
       <div class="project-card" data-tags="bi">
         <div class="project-top"><h3>Supermarket Sales Analysis</h3><span class="project-year">2023</span></div>
         <ul>
-          <li>Built a Power BI dashboard analyzing supermarket sales transactions.</li>
-          <li>Modeled data and developed DAX measures for key sales metrics and purchasing patterns.</li>
+          <li>Built an interactive Power BI dashboard analyzing supermarket sales transactions across 6 product categories with Date and Product Category filters.</li>
+          <li>Found that gross income was relatively balanced across all categories, with Food & Beverages contributing the highest revenue ($2.67K, 17.38%) and Health & Beauty the lowest ($2.34K, 15.23%).</li>
+          <li>Identified a positive correlation between quantity purchased and gross income; Electronic Accessories had the highest sales volume (971 units) while Fashion Accessories yielded the highest average gross amount per unit ($2.867).</li>
+          <li>Revealed that Food & Beverages received the highest customer rating (7.1) while Home & Lifestyle had the lowest (6.8).</li>
         </ul>
         <div class="project-tools">Power BI · DAX</div>
         <div class="project-links"><a href="https://app.powerbi.com/view?r=eyJrIjoiNzA4YjZkMzctY2EwMi00ODQwLTljMTgtOTBlYjdiYThmMzQyIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">View Dashboard →</a></div>
       </div>
 
       <div class="project-card" data-tags="bi">
-        <div class="project-top"><h3>Airbnb Listing Dashboard</h3><span class="project-year">2023</span></div>
+        <div class="project-top"><h3>Airbnb Listing Analysis</h3><span class="project-year">2023</span></div>
         <ul>
-          <li>Built an interactive Power BI dashboard exploring U.S. Airbnb listing data.</li>
-          <li>Designed a data model supporting multi-dimensional analysis (location, room type, price, capacity).</li>
+          <li>Built an interactive Power BI dashboard exploring 48.90K U.S. Airbnb listings from 37.46K hosts with filters for room type, neighbourhood, price, and number of reviews.</li>
+          <li>Designed a data model supporting multi-dimensional analysis across location, room type (Entire home/apt, Private room, Shared room), price (avg. $152.72), and reviews (avg. 23.27).</li>
+          <li>Identified Williamsburg as the neighbourhood with the most listings (4.23K), and found that higher-priced listings tend to have fewer reviews based on scatter plot analysis.</li>
+          <li>Built a searchable listing detail table enabling granular exploration by listing name, price, reviews per month, and minimum nights.</li>
         </ul>
         <div class="project-tools">Power BI · DAX</div>
         <div class="project-links"><a href="https://app.powerbi.com/view?r=eyJrIjoiNDBhNmViMWYtMmY5NC00ZTg1LTk1MWItODMyMWVlNDYyODQ3IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" target="_blank">View Dashboard →</a></div>
@@ -564,8 +580,10 @@
       <div class="project-card" data-tags="bi">
         <div class="project-top"><h3>Foodstory — Cloud Kitchen Dashboard</h3><span class="project-year">2023</span></div>
         <ul>
-          <li>Built a Power BI dashboard giving management full visibility into cloud kitchen performance.</li>
-          <li>Analysis at customer, branch, and menu levels to support operational decisions.</li>
+          <li>Built a Power BI dashboard (Customer Data, Branch Report, Menu Report, Customer Report) to support management decisions in improving Foodstory's sales and revenue.</li>
+          <li>Analyzed 100,835 orders totaling Rp 9.306 billion; found that 97.89% of transactions occurred without promo, with the 20% Discount promo contributing the most revenue.</li>
+          <li>Identified Sawah Besar as the top-revenue branch, 11:00–13:00 as peak order hours, and delivery as customers' preferred channel.</li>
+          <li>Delivered business recommendations such as discounts for pick-up orders, a self-managed delivery system, and social media campaigns to boost sales.</li>
         </ul>
         <div class="project-tools">Power BI · DAX</div>
         <div class="project-links">
@@ -577,18 +595,21 @@
       <div class="project-card" data-tags="sql bi">
         <div class="project-top"><h3>Flight Company Analysis</h3><span class="project-year">2023</span></div>
         <ul>
-          <li>Wrote complex SQL queries supporting policy formulation across Marketing, Corporate Strategy, and Customer Relations.</li>
-          <li>Processed results in Excel for management-ready reports.</li>
+          <li>Analyzed customer and ticket sales data for a commercial airline (Margie's Travel) using SQL and Excel to support 3 divisions: Marketing, Corporate Strategy, and Customer Relations.</li>
+          <li>Identified that male firstClass passengers generated the highest revenue ($104,674) and the Campo Grande–Sao Paulo route delivered the highest revenue per km in firstClass ($3.87/km).</li>
+          <li>Found declining economy-class ticket sales among female passengers since 2020, and identified Salvador (BH) as the least attractive destination despite its high price per km.</li>
+          <li>Delivered strategic recommendations including economy-class promotions for female customers, price adjustments for underperforming routes, and loyalty discounts for high-volume customers.</li>
         </ul>
         <div class="project-tools">SQL · Excel</div>
         <div class="project-links"><a href="https://drive.google.com/file/d/13THcCAnvnw2zWFH0YWt4YJC-KB7Xuuyr/view?usp=sharing" target="_blank">Query &amp; Report →</a></div>
       </div>
 
       <div class="project-card" data-tags="sql bi">
-        <div class="project-top"><h3>US National Highway Research</h3><span class="project-year">2023</span></div>
+        <div class="project-top"><h3>United States National Highway Research</h3><span class="project-year">2023</span></div>
         <ul>
-          <li>Analyzed U.S. toll road accident data to recommend accident-risk reduction policies.</li>
-          <li>Cleaned data (missing values, typos, unreported incidents), built pivot tables and visualizations in Sheets.</li>
+          <li>Analyzed 34,415 U.S. road accident cases (NHTSA 2021 data) using SQL and Excel to recommend accident-risk reduction strategies.</li>
+          <li>Found that most accidents occurred on arterial roads (28.9%), during daylight (45.84%), and involved non-drunk drivers (74.24%), peaking at 2 PM and on Sundays.</li>
+          <li>Delivered policy recommendations including additional traffic signage, driving-duration regulations, and lane separators for mixed fast/slow traffic.</li>
         </ul>
         <div class="project-tools">SQL · Google Sheets</div>
         <div class="project-links"><a href="https://drive.google.com/file/d/1B6cuomhdnmaM6VUEaDGFPfr-Drp8Shx6/view?usp=drivesdk" target="_blank">Query &amp; Report →</a></div>
