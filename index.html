@@ -206,7 +206,7 @@
   .cert-row:last-child{border-bottom:none;}
   @media (max-width:700px){ .cert-row{grid-template-columns:1fr; gap:4px;} }
   .cert-name{color:var(--text-primary);}
-  .cert-org{color:var(--accent-teal); font-family:'IBM Plex Mono',monospace; font-size:13px;}
+  .cert-org{color:var(--accent-white); font-family:'IBM Plex Mono',monospace; font-size:13px;}
   .cert-date{color:var(--text-dim); font-family:'IBM Plex Mono',monospace; font-size:13px;}
 
   /* FOOTER */
@@ -362,7 +362,7 @@
     <div class="tl-item">
       <div class="tl-date">2025 — Present</div>
       <div class="tl-body">
-        <h3>M.Sc. Statistics and Data Science <span style="color:var(--text-dim); font-weight:400;">— GPA 3.83/4.00</span></h3>
+        <h3>M.Sc. Statistics and Data Science <span style="color:var(--text-dim); font-weight:400;">— GPA 3.69/4.00</span></h3>
         <div class="tl-org">IPB University</div>
         <ul>
           <li>Currently developing a thesis on the shift in research orientation among IPB Statistics students (2010–2025), using an LLM Direct approach to extract topics from 552 thesis summaries.</li>
@@ -630,7 +630,12 @@
       <span class="pub-status accepted">Accepted — 2026</span>
       <h3>Headline-Based Indonesian Political Misinformation Classification: A Comparative Study of Naive Bayes, SVM, CNN, and IndoBERT Models</h3>
       <div class="pub-meta">Journal of Applied Informatics and Computing (JAIC) · e-ISSN 2548-6861 · 4th of 6 authors</div>
-      <p>Classified 5,132 Indonesian political news headlines as misinformation or valid, based solely on headlines. IndoBERT achieved the best results (90.25% accuracy, 90.24% Macro F1), though McNemar's test showed differences between models were not statistically significant. Applied leakage-aware preprocessing and error analysis revealing shortcut learning.</p>
+      <ul>
+        <li>Classified 5,132 Indonesian political news headlines as misinformation or valid, based solely on headlines.</li>
+        <li>Compared 4 models: Naive Bayes, SVM, CNN, and IndoBERT, with IndoBERT achieving the best results (90.25% Accuracy, 90.24% Macro F1).</li>
+        <li>Applied leakage-aware preprocessing to remove source markers that could cause models to "cheat" by learning writing style rather than factual content.</li>
+        <li>Conducted error analysis revealing shortcut learning phenomena in the models, and included computational cost analysis as part of the evaluation.</li>
+      </ul>
       <div class="project-links" style="margin-top:14px;"><a href="https://drive.google.com/file/d/1xjAb0WXQUkw_iei_eugVqi0u5AXBanpb/view?usp=sharing" target="_blank">View Document →</a></div>
     </div>
 
@@ -638,7 +643,13 @@
       <span class="pub-status revision">Under Revision — 2026</span>
       <h3>Evaluasi Performa RoBERTa, IndoRoBERTa, dan XLM-R pada Klasifikasi Sentimen Review Produk Bahasa Indonesia</h3>
       <div class="pub-meta">Jurnal Ilmiah Penelitian dan Pembelajaran Informatika (JIPI) · Corresponding Author</div>
-      <p>Compared 4 NLP models (TF-IDF+LR, RoBERTa, IndoRoBERTa, XLM-R) on 831 Indonesian product reviews. XLM-R achieved the best results: 95.28% accuracy, 94.90% F1-Score, using stratified 5-fold cross-validation.</p>
+      <ul>
+        <li>Compared the performance of TF-IDF+Logistic Regression, RoBERTa, IndoRoBERTa, and XLM-R on 831 Indonesian product reviews using Stratified 5-Fold Cross-Validation.</li>
+        <li>XLM-R achieved the best performance (accuracy 95.28%, F1-score 94.90%), outperforming the monolingual IndoRoBERTa (89.96%), demonstrating that large-scale multilingual pretraining surpasses language-specific pretraining even on Indonesian-specific tasks.</li>
+        <li>Analyzed training/validation loss curves and confusion matrices revealing that XLM-R showed the most stable generalization with minimal overfitting across all folds.</li>
+        <li>Achieved the best results with XLM-R: 95.28% accuracy and 94.90% F1-Score, using stratified 5-fold cross-validation.</li>
+        <li>Coordinated the entire research process, from model experimentation to results reporting.</li>
+      </ul>
       <div class="project-links" style="margin-top:14px;"><a href="https://drive.google.com/file/d/1ol4qeTMx_Kox6jNxDcZzVbCXXOkhwMQI/view?usp=sharing" target="_blank">View Document →</a></div>
     </div>
   </div>
